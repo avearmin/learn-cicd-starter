@@ -19,5 +19,5 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run Auth Tests
-        run: go test ./internal/auth
+        run: go test ./internal/auth --cover
 

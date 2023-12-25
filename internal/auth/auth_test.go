@@ -42,7 +42,7 @@ func TestGetAPIKey(t *testing.T) {
 		},
 	}
 
-	for name, test := range tests {
+	for name, test := range testss { // intentional break
 		t.Run(name, func(t *testing.T) {
 			gotValue, gotError := GetAPIKey(test.input)
 			if test.wantValue != gotValue && test.wantError != gotError {

@@ -36,4 +36,7 @@ jobs:
       
       - name: Check Format
         run: test -z $(go fmt ./...)
-
+        
+      - name: Run Auth Tests
+        run: go test ./... --cover
+        

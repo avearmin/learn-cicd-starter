@@ -21,7 +21,7 @@ jobs:
       - name: Run Tests
         run: go test ./... --cover
 
-  fmt:
+  style:
     name: Fmt
     runs-on: ubuntu-latest
 
